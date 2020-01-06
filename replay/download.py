@@ -78,7 +78,7 @@ def print_help():
   print("default to %s if unset.\n" % UNLOGGER_DATA_DEFAULT)
   print("Environment variable COMMA_API_JWT must be set to access the Comma drive data")
   print("API. Get a token using the instructions here:\n")
-  print("  https://api.comma.ai/#authentication")
+  print("  https://api.comma.ai/#authentication\n")
 
 if __name__ == "__main__":
   unix_options = "hr"
