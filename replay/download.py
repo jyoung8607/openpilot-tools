@@ -50,7 +50,7 @@ def cache_raw_file_set(dongle_dir, fileset):
 
   return
 
-def download_route(route, fileset):
+def download_route(storage_dir, route, fileset):
   route_split = route.split('|')
   dongle = route_split[0]
   drive = route_split[1]
@@ -108,7 +108,7 @@ if __name__ == "__main__":
       sys.exit(0)
     elif cur_arg in ('-r', '--route'):
       raw_driving_data_json = cache_raw_driving_data_json(storage_dir, comma_api_jwt, cur_arg_val)
-      download_route(cur_arg_val, raw_driving_data_json)
+      download_route(storage_dir, cur_arg_val, raw_driving_data_json)
       sys.exit(0)
 
   print("ERROR: No arguments specified!\n")
