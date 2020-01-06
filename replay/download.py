@@ -63,7 +63,7 @@ def download_route(storage_dir, route, fileset):
     if not raw_driving_data_json[fileset]:
       print(f"No {fileset} available to download.")
     else:
-      cache_raw_file_set(STORAGE_ROOT, fileset)
+      cache_raw_file_set(storage_dir, fileset)
   print("Done!")
 
 def print_help():
