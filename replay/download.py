@@ -4,7 +4,6 @@ import os
 import getopt
 import json
 import requests
-import re
 import urllib.parse as urlparse
 
 UNLOGGER_DATA_DEFAULT = "/home/batman/unlogger_data"
