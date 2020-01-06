@@ -72,13 +72,13 @@ def download_route(storage_dir, route, fileset):
 
 def print_help():
   print("Usage: download.py --route=\"[route_name]\"\n")
-  print("Example: download.py --route=\"269e9812ad3ae3582|2020-01-01--15-58-02\"")
+  print("Example: download.py --route=\"269e9812ad3ae3582|2020-01-01--15-58-02\"\n")
   print("Remove any trailing segment ID (like --0). All segments in the route will be")
   print("downloaded to a directory specified by env variable UNLOGGER_DATA, defaulting")
-  print("to %s if unset." % UNLOGGER_DATA_DEFAULT)
+  print("to %s if unset.\n" % UNLOGGER_DATA_DEFAULT)
   print("Environment variable COMMA_API_JWT must be set to access the Comma drive data")
-  print("API. Get a token using the instructions here:")
-  print("https://api.comma.ai/#authentication")
+  print("API. Get a token using the instructions here:\n")
+  print("  https://api.comma.ai/#authentication")
 
 if __name__ == "__main__":
   unix_options = "hr"
