@@ -91,7 +91,7 @@ if __name__ == "__main__":
     print_help()
     sys.exit(2)
 
-  if not os.isdir(STORAGE_ROOT):
+  if not os.path.isdir(storage_dir):
     print("ERROR: Storage directory %s does not exist or access not permitted!\n" % storage_dir)
     print_help()
     sys.exit(2)
@@ -109,3 +109,7 @@ if __name__ == "__main__":
     elif cur_arg in ('-r', '--route'):
       raw_driving_data_json = cache_raw_driving_data_json(storage_dir, comma_api_jwt, cur_arg_val)
       download_route(cur_arg_val, raw_driving_data_json)
+      sys.exit(0)
+
+  print("ERROR: No arguments specified!\n")
+  print_help()
