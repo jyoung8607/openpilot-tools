@@ -59,7 +59,7 @@ def download_route(storage_dir, route, fileset):
   print("Drive:  %s" % drive)
   print("")
 
-  if fileset['qlogs'] is None and fileset['logs'] is None:
+  if raw_driving_data_json['qlogs'] is None and raw_driving_data_json['logs'] is None:
     print("ERROR: No data found for the specified drive!")
     sys.exit(2)
 
